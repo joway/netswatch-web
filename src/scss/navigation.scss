@@ -1,0 +1,25 @@
+$nav-height: 50px;
+$nav-logo-margin: 12px;
+$nav-logo-size: 26px;
+.nw-nav {
+    height: $nav-height;
+    border-bottom: 1px solid $grey-200;
+}
+
+.nw-nav .nw-nav-item {
+    line-height: $nav-height;
+}
+
+.nw-nav .nw-nav-title {
+    line-height: $nav-height;
+    text-align: center;
+    font-family:"Times New Roman";    
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.nw-nav .nw-nav-logo {
+    width: $nav-logo-size;
+    height: $nav-logo-size;
+    margin: $nav-logo-margin;
+}

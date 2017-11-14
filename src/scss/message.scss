@@ -1,0 +1,39 @@
+$message-bottom-height: 32px;
+.nw-message {
+    margin: 50px 0;
+    .nw-message-digest {
+        display: flex;
+        align-items: center;
+        .nw-message-img {
+            width: 150px;
+            height: 120px;
+            margin-left: 12px;
+        }
+        .nw-message-digest-block {
+            display: block;
+            font-size: 0.9em;
+            .nw-message-title {
+                color: $blue-grey-900;
+            }
+            .nw-message-content {
+                color: $teal-800;
+            }
+        }
+    }
+    .nw-message-bottom {
+        font-size: 0.8em;
+        display: flex;
+        .nw-message-nail {
+            display: inline;
+            line-height: $message-bottom-height;
+        }
+        .nw-message-share {
+            line-height: $message-bottom-height;
+            display: inline;
+            img {
+                height: $message-bottom-height / 1.5;
+                line-height: $message-bottom-height;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+$headtab-height: 50px;
+$headtab-logo-margin: 12px;
+$headtab-logo-size: 26px;
+.nw-headtab {
+    height: $headtab-height;
+    border-bottom: 1px solid $grey-200;
+    text-align: center;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.nw-headtab .nw-headtab-item {
+    line-height: $headtab-height;
+    margin: 0 5%;
+    color: $blue-grey-500;
+}
