@@ -1,10 +1,10 @@
-FROM node:9.1.0-alpine
+FROM node:8.1.2
 ENV TZ Asia/Shanghai
 ENV NODE_ENV 'prod'
 
 RUN mkdir -p /app
 WORKDIR /app
-RUN apk add --update nginx && rm -rf /var/cache/apk/*
+RUN apt update && apt install -y nginx && apt-get autoclean
 
 COPY package.json /app/
 RUN npm install
