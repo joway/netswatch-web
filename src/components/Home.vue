@@ -9,6 +9,12 @@
       <Message></Message>
       <Message></Message>
     </div>
+
+    <div class="nw-ball">
+      <div class="nw-plus"></div>
+    </div>
+
+    <SubmitDialog></SubmitDialog>
   </div>
 </template>
 
@@ -16,6 +22,7 @@
 import Navigation from './Navigation'
 import HeadTab from './HeadTab'
 import Message from './Message'
+import SubmitDialog from './SubmitDialog'
 
 export default {
   name: 'Home',
@@ -23,6 +30,7 @@ export default {
     Navigation,
     HeadTab,
     Message,
+    SubmitDialog,
   },
   data() {
     return {

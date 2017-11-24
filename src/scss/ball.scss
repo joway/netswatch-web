@@ -1,0 +1,54 @@
+$ball-width: 42px;
+$ball-edge: 36px;
+$plus-width: 25px;
+
+.nw-ball {
+    position: fixed;
+    z-index: 1024;
+    width: $ball-width;
+    height: $ball-width;
+    transform: translateZ(0);
+    bottom: $ball-edge;
+    right: $ball-edge;
+    background-color: #42a5f5;
+    border-radius: 50%;
+}
+
+.nw-plus {
+    margin: ($ball-width - $plus-width) / 2;
+    position: relative;
+    width: $plus-width;
+    height: $plus-width;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        transition: transform 0.25s ease-out;
+    }
+    /* Vertical line */
+    &:before {
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        margin-left: -2px;
+    }
+    /* horizontal line */
+    &:after {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+    }
+    &:hover {
+        cursor: pointer;
+        &:before {
+            transform: rotate(1800deg);
+        }
+        &:after {
+            transform: rotate(1800deg);
+        }
+    }
+}
